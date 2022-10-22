@@ -1,0 +1,2 @@
+
+Please download CIFAR-10 dataset first, and save them in '/datasets'.
