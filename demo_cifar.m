@@ -8,13 +8,13 @@ testdata = double(testdata);
 nbits = [8, 16, 32, 64, 96, 128];  
 
 %% run algo
-method = 'CISP';
+method = 'LSAH';
 
 display([method ': ']);
     for i=1:length(nbits)
         t1=clock;
         switch method
-            case 'CISP'
+            case 'LSAH'
                 ek=clock;
                 anchor_nm = ['anchor_' num2str(AnchorNum)];
                 eval(['[~,' anchor_nm '] = litekmeans(traindata, AnchorNum, ''MaxIter'', 10);']);
